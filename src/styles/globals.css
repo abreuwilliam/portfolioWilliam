@@ -1,0 +1,23 @@
+/* Seletores por Atributo de Tema */
+html[data-theme="dark"] {
+  --bg-primary: #030712;
+  --bg-card: #111827;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-card: #f3f4f6;
+  --text-primary: #0f172a;
+  --text-secondary: #4b5563;
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Aplicação Global */
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
